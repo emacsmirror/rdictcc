@@ -8,7 +8,33 @@ database out of the dictionary files from [dict.cc](http://www.dict.cc).
 Simply place the file `rdictcc.rb` somewhere in your `PATH`.  Executing
 `rdictcc.rb --help` will show you all that's needed.
 
-To make use of the Emacs mode, add this to your `~/.emacs`.
+```
+Usage: rdictcc.rb [database_import_options]
+       rdictcc.rb [misc_options]
+       rdictcc.rb [query_option] QUERY
+       rdictcc.rb
+
+If no option nor QUERY is given, you'll enter rdictcc's interactive mode.
+
+Database building options:
+    -i, --import DICTCC_FILE         Import the dict file from dict.cc
+
+Misc options:
+    -v, --version                    Show rdictcc.rb's version
+    -S, --size                       Show the number of entries in the databases
+    -d, --directory PATH             Use PATH instead of ~/.rdictcc/
+    -h, --help                       Show this message
+
+Format options:
+    -c, --compact                    Use compact output format
+
+Query option:
+    -s, --simple                     Translate the word given as QUERY (default)
+    -r, --regexp                     Translate all words matching the regexp QUERY
+    -f, --fulltext                   Translate all sentences matching the regexp QUERY
+```
+
+To make use of the Emacs interface, add this to your `~/.emacs`.
 
 ```
 ;; Adapt path as you need
@@ -26,6 +52,5 @@ Have fun!
 
 ## License
 
-Copyright (C) 2012 Tassilo Horn <tassilo@member.fsf.org>
-
-Distributed under the General Public License, Version 3.
+Distributed under the [General Public License, Version 3 or
+later](https://www.gnu.org/licenses/gpl-3.0.en.html).
