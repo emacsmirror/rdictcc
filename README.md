@@ -50,6 +50,10 @@ To make use of the Emacs interface, add this to your `~/.emacs`.
 
 Have fun!
 
+## Bugs
+
+Bugs can be reported at [https://todo.sr.ht/~tsdh/rdictcc].
+
 ## License
 
 Distributed under the [General Public License, Version 3 or
