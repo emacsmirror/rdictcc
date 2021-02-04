@@ -52,7 +52,7 @@ Have fun!
 
 ## Bugs
 
-Bugs can be reported at [here](https://todo.sr.ht/~tsdh/rdictcc).
+Bugs can be reported [here](https://todo.sr.ht/~tsdh/rdictcc).
 
 ## License
 
