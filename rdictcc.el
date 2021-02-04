@@ -1,8 +1,8 @@
 ;;; rdictcc.el --- use the rdictcc.rb client from within Emacs
 
-;; Copyright (C) 2006, 2007, 2008 by Tassilo Horn
+;; Copyright (C) 2006, 2007, 2008, 2021 by Tassilo Horn
 
-;; Author: Tassilo Horn <tassilo@member.fsf.org>
+;; Author: Tassilo Horn <tsdh@gnu.org>
 
 ;; Patches and contributions:
 ;;   - Richard G Riley <rileyrgdev@gmail.com>
@@ -130,7 +130,7 @@ if NOSELECT is non-nil."
 (defun rdictcc-update-translation-buffer (translation noselect)
   (set-buffer (get-buffer-create rdictcc-buffer))
   (rdictcc-buffer-mode)
-  (let ((inhibit-read-only t)) 
+  (let ((inhibit-read-only t))
     (erase-buffer)
     (insert translation))
   (goto-char (point-min))

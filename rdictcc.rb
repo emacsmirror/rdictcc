@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 ###############################################################################
-# Copyright (C) 2006-2014 by Tassilo Horn
+# Copyright (C) 2006-2021 by Tassilo Horn
 #
 # Author: Tassilo Horn <tassilo@gnu.org>
 #
