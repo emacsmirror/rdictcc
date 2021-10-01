@@ -346,13 +346,17 @@ def interactive_mode
     "and print the translations until you type C-d (that is Ctrl-d)."
   evaluator = RDictCcQueryEvaluator.new
   print "=> "
-  while word = gets
-    word.chomp!
-    puts
-    if word == "^Q" then break end
-    evaluator.query word
-    puts "--------------------------------------------------------------------------------"
-    print "=> "
+  begin
+    while word = gets
+      word.chomp!
+      puts
+      if word == "^Q" then break end
+      evaluator.query word
+      puts "--------------------------------------------------------------------------------"
+      print "=> "
+    end
+  rescue Interrupt
+    # User pressed Ctrl+c, no just exit.
   end
   puts "Bye."
   exit 0
