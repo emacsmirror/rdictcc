@@ -356,7 +356,7 @@ def interactive_mode
       print "=> "
     end
   rescue Interrupt
-    # User pressed Ctrl+c, no just exit.
+    # User pressed Ctrl+c, so just exit.
   end
   puts "Bye."
   exit 0
